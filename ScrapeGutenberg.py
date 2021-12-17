@@ -29,6 +29,10 @@ def ExploreByBookShelf(Shelf=range(1,200)):
   the book shelf category
   '''
 
+  #Create data folder locally
+  if not(os.path.exists("data")):
+      os.system("mkdir data")
+
   AllTitle = []
   AllWriter = []
   AllDownloadCount = []
